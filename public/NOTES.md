@@ -12,3 +12,13 @@ Some stuff you need to know before learning nextjs are javascript and basic of R
 ### Server-side Rendering
 Unlike a traditional React app where the entire application is loaded and rendered on the client
 Next.js allows the first page load to be rendered by the server, which is great for SEO and performance
+
+### Next.js Benefits
+- Performance
+- SEO
+- Easy Page Routing
+- API Routes
+- Out of the box Typescript and Sass
+- Static Site Generation
+- Easy Deployment
+- 
