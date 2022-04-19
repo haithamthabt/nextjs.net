@@ -141,5 +141,44 @@ You create routes as files under `pages` and use the built-in `Link` component. 
 >
 > If you need to add attributes like, for example, className, add it to the a tag, not to the Link tag
   
+### Data Fetching
+
+There are multiple ways to do data fetching with Next.js, this allows you to render your content in different ways depending on your application's use case. 
+These include the following
+- Pre-rendering with **Server-side Rendering**
+- **Static Generation**
+- Updating or creating content at runtime with **Incremental Static Regeneration**
+
+
+#### SSR: Server-side rendering
+
+This method requires server (node.js and npm)
+#### SSG: Static-site generation
+
+This method does not require server since Next.js will export all data as static pages
+#### CSR: Client-side rendering
+
+#### Dynamic routing 
+
+#### ISR: Incremental Static Regeneration
+**ISR** allows content editors and developers to use static generation on a per-page basis and update content without having to rebuild the entire site
+Next.js generates new pages and regenerates current pages on the fly when data is updated
+- **Note** there is no change on the first visit after the content is changed
+-  **Note** the page visit triggers Next.js to re-fetch the page data in the background
+- You will need to visit the page and then refresh to see the updated data
+
+
+#### To automatic deploy Next.js web app to GitHub pages, follow this tutorial
+
+This tutorial is based on exporting the web app to static pages. 
+https://www.youtube.com/watch?v=yRz8D_oJMWQ&t=525s
+
+
+#### Another tutorial for deploying next.js to firebase
+https://github.com/jthegedus/firebase-gcp-examples/tree/main/functions-nextjs
+
+  
+
+
 
 
