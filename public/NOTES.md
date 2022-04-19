@@ -68,8 +68,8 @@ npm build & npm export
 ### Pages in Next.js
 - In Next.js, a page is a React Component exported from a file in the pages directory.
 - Pages are associated with a route based on their file name. For example, in development:
-  . 'pages/index.js' is associated with the '/' route.
-  . 'pages/posts/first-post.js' is associated with the '/posts/first-post route'
+  - 'pages/index.js' is associated with the '/' route.
+  - 'pages/posts/first-post.js' is associated with the '/posts/first-post route'
   
   
 #### To can create different pages in Next.js.
