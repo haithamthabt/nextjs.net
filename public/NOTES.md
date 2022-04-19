@@ -27,8 +27,8 @@ Next.js allows the first page load to be rendered by the server, which is great 
 ### Development Environment
 To create Next.js app, you will need two things
 - Node.js,  (I am using version 16.13) to check version of your node, right in your cmd 
----command
+```command line
   node -v
----
+```
 - Code editor (I am using VS Code)
 - 
