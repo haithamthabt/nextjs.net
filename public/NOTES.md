@@ -65,5 +65,25 @@ To export the app for static websites, run the following command
 npm build & npm export
 ```
 
+### Pages in Next.js
+- In Next.js, a page is a React Component exported from a file in the pages directory.
+- Pages are associated with a route based on their file name. For example, in development:
+  . 'pages/index.js' is associated with the '/' route.
+  . 'pages/posts/first-post.js' is associated with the '/posts/first-post route'
+  
+  
+#### To can create different pages in Next.js.
+Simply create a JS file under the 'pages directory', and the path to the file becomes the URL path.
+In a way, this is similar to building websites using HTML or PHP files. Instead of writing HTML you write JSX and use React Components.
 
 
+### Link Component
+When linking between pages on websites, you use the <a> HTML tag.
+In Next.js, you use the Link Component from next/link to wrap the <a> tag. 
+<Link> allows you to do client-side navigation to a different page in the application.
+  
+### Using `<Link>`
+First, open pages/index.js, and import the Link component from next/link by adding this line at the top:
+```javascript
+  import Link from 'next/link'
+```
