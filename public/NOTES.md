@@ -158,6 +158,7 @@ This method requires server (node.js and npm)
 This method does not require server since Next.js will export all data as static pages
 #### CSR: Client-side rendering
 
+This method requires server (node.js and npm)
 #### Dynamic routing 
 
 #### ISR: Incremental Static Regeneration
@@ -167,7 +168,7 @@ Next.js generates new pages and regenerates current pages on the fly when data i
 -  **Note** the page visit triggers Next.js to re-fetch the page data in the background
 - You will need to visit the page and then refresh to see the updated data
 
-
+This method requires server (node.js and npm)
 #### To automatic deploy Next.js web app to GitHub pages, follow this tutorial
 
 This tutorial is based on exporting the web app to static pages. 
