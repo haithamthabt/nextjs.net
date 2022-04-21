@@ -182,4 +182,41 @@ https://github.com/jthegedus/firebase-gcp-examples/tree/main/functions-nextjs
 ### Best Place to put the nav in Next.js is in the app page (`_app.js` file)
   
 
+### Each item in the array you create dynamicly is unique
+```javascript
+  <div>
+        {blogPosts.map((item) => (
+          <div key={item.slug}>
+            <h1>{item.title}</h1>
+            <p>{item.date.toString()}</p>
+            <p>{item.content}</p>
+          </div>
+        ))}
+      </div>
+  
+```
+that is why we added `key={item.slug}`
+  
+  
+### To render a collection of children, use an array
 
+We use array to render a collection 
+  
+#### Unhandled Runtime Error
+```error
+Error: Hydration failed because the initial UI does not match what was rendered on the server.
+Error: Text content does not match server-rendered HTML.
+Error: Hydration failed because the initial UI does not match what was rendered on the server.
+Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
+```
+I got all these errors because of one simple thing
+To convert the date in html, intead of `toString()` it should be `toDateString()` 
+Change it from this
+```javascript
+  <p>{item.date.toString()}</p>
+```
+  
+To this
+```javascript
+  <p>{item.date.toDateString()}</p>
+```
