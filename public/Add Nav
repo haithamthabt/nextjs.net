@@ -1,0 +1,89 @@
+
+# Nav in Next.js
+
+## How to add nav in Next.js
+
+Best place to put the nav in Next.js is in the app page (`_app.js` file)
+
+But first lets make very simple nav with html
+
+```html
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/about">About</a></li>
+	</ul>
+</nav>
+```
+This is our simple nav
+Now we need to put it inside the `_app.js` file
+But lets first take a look at our default `_app.js` file
+
+```javascript
+
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+
+```
+
+the `MyApp` function returns the body of the content we want, so in order to add more stuff to the body, we need to wrap everything inside a `<div>` tag
+
+```javascript
+
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return <div>
+    <nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+		</ul>
+	</nav>
+    <Component {...pageProps} />
+  </div>
+}
+
+export default MyApp
+
+```
+
+So far so good
+
+To use the `<a>` tags in Next.js we will need to import the `Link` 
+```javascript
+import Link from 'next/link';
+```
+This will manage the routing for us
+
+#### Final `_app.js` file should look like this
+
+```javascript
+
+import Link from 'next/link';
+
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return <div>
+    <nav>
+      <ul>
+        <li><Link href="/"><a>Home</a></Link></li>
+        <li><Link href="/about"><a>About</a></Link></li>
+      </ul>
+    </nav>
+    <Component {...pageProps} />
+  </div>
+}
+
+export default MyApp
+
+```
+
+This is how to add `nav` to Next.js project in a simplest form, and then be creative and add your styles and go crazy with it
+
