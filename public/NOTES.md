@@ -179,7 +179,7 @@ https://www.youtube.com/watch?v=yRz8D_oJMWQ&t=525s
 https://github.com/jthegedus/firebase-gcp-examples/tree/main/functions-nextjs
 
   
-
-
+### Best Place to put the nav in Next.js is in the app page (`_app.js` file)
+  
 
 
