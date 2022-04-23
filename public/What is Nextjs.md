@@ -43,4 +43,8 @@ So in order to host a full next application, the server does have to have node i
 - we can also generate static Web sites similar to how Gatsby works.
 - For deployment, you have a bunch of options. If it's a static Web site that you generate, you can host it anywhere, including a CDN.
 
+
+
+# What you need to start Next.js app?
+We will be using the node package manager to install packages. Also, you do need it for the create next app tool that we'll be using.
 ### Thats it for now. You will need to edit this before you post it
