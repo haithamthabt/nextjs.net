@@ -1,5 +1,3 @@
-# Next.js
-
 ## What is Next.js?
 
 Next is a React frontend development web framework created by Vercel (Formerly Zeit) that enables functinality such as server-side rendering and static site generation
@@ -225,11 +223,18 @@ To this
 #### For adding stuff in html
  
 We use the characters 
-```
+```html
   ` `
 ```
 Similar to the code below:
-```
+```html
 <h1><Link href={`/blog/${item.slug}`}><a>{item.title}</a></Link></h1>
   
 ```
+we cant just use the quotes `''` we need to use the special character ``` `` ```
+
+
+  
+  
+  
+  
