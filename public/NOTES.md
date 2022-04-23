@@ -220,3 +220,11 @@ To this
 ```javascript
   <p>{item.date.toDateString()}</p>
 ```
+  
+  
+#### For adding stuff in html
+ 
+We use the characters 
+```
+  ` `
+```
