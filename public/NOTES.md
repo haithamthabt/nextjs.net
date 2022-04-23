@@ -228,3 +228,8 @@ We use the characters
 ```
   ` `
 ```
+Similar to the code below:
+```
+<h1><Link href={`/blog/${item.slug}`}><a>{item.title}</a></Link></h1>
+  
+```
