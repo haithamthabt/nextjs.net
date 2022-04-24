@@ -112,3 +112,7 @@ import  '../styles/Home.module.css'
 The only place you can import global stylesheets is in `_app.js`
 
 More about styles on the (styles tutorial page)
+
+
+# Source
+https://www.udemy.com/course/nextjs-dev-to-deployment/learn/lecture/26055216#overview
