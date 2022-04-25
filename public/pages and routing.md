@@ -27,3 +27,5 @@ Note that we have `[]` for the slug file so that Next.js can understand that thi
 
 > Note, we can have an `index.js` file inside the `blog` folder so it can be accessed from the blog url `localhost:3000/blog`
 
+### How routing works
+
