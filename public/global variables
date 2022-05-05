@@ -1,0 +1,6 @@
+# Global Variables
+
+It is a good idea to have global variables so you dont have to change the code. C
+Create a config folder and inside lets create a file called index.js
+Inisde this file we can put our global variables such as number of posts per page and so on.
+
