@@ -9,7 +9,7 @@ We create in the root `jsconfig.json` file
     "compilerOptions": {
         "baseURL": ".",
         "paths": {
-            "@/component/*": ["component/*"],
+            "@/components/*": ["components/*"],
             "@/config/*": ["config/*"],
             "@/utils/*": ["utils/*"],
             "@/styles/*": ["styles/*"],
