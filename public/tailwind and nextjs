@@ -1,0 +1,12 @@
+#
+
+### Tailwind color issue
+This issue I faced when I tried to assign color as a variable class 
+```javascript
+
+<div className ="bg-${colorKey[children]}-600 text-bold">
+
+```
+
+So as you can see I have a variable that can change, but tailwind only accepts the first input and then for the rest it does not work. 
+One way to solve this is by not combining the class with the variable as string concatinating. But it should be as one string from the begening.
