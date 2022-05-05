@@ -1,0 +1,4 @@
+# Gethub Actions, Next.js and Firebase
+
+Best way to setup github action workdflow is through `firebase commands`
+It setups everything for you. You just need to make sure that all the folders, files, and workflow folder on the same root directory
